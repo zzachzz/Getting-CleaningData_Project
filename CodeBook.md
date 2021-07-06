@@ -1,6 +1,14 @@
 
 ## Codebook
 
+### Cleaned Data
+            * allSubjects <- all 30 subjects in both test and training datasets
+            * trainTest <- X_train and X_test datasets combined
+            * allLabels <- numerical values for activities (standing, etc) combined
+            * trainTestWLabels <- fully merged and tidy dataset
+            * meanStdVals <- tidy dataset with only columns relating to mean/std
+            * tidyMeansStd <- final dataset grouped by activity and subject
+
 ### Sample Subjects 
 ---------------
             The group of 30 volunteers who carried out the experiment
