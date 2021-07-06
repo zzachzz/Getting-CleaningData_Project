@@ -90,7 +90,7 @@ tidyMeansStd <- meanStdVals %>%
   summarize_all(mean)
 
 #write out tidy dataset
-write.table(tidyMeansStd,"C:/Users/Zach/Desktop/neat.txt",row.names = FALSE)
+write.table(tidyMeansStd,"./neat.txt",row.names = FALSE)
 
 
 
