@@ -5,23 +5,23 @@ library(data.table)
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 #file destination
-destfile <- "/URI HAR Dataset.zip"
+destfile <- "./URI HAR Dataset.zip"
 
 #download zip file
 download.file(url, destfile)
 
 #unzip
-unzip("/URI HAR Dataset.zip",list=TRUE)
+unzip("./URI HAR Dataset.zip",list=TRUE)
 
 #filepaths assigned to variables
-trainFile <- "UCI HAR Dataset/train/X_train.txt"
-testFile <- "UCI HAR Dataset/test/X_test.txt"
-testLabel <- "UCI HAR Dataset/test/y_test.txt"
-trainLabel <- "UCI HAR Dataset/train/y_train.txt"
-activLabel <- "UCI HAR Dataset/activity_labels.txt"
-features <- "UCI HAR Dataset/features.txt"
-subjectTrain <- "UCI HAR Dataset/train/subject_train.txt"
-subjectTest <- "UCI HAR Dataset/test/subject_test.txt"
+trainFile <- "./UCI HAR Dataset/train/X_train.txt"
+testFile <- "./UCI HAR Dataset/test/X_test.txt"
+testLabel <- "./UCI HAR Dataset/test/y_test.txt"
+trainLabel <- "./UCI HAR Dataset/train/y_train.txt"
+activLabel <- "./UCI HAR Dataset/activity_labels.txt"
+features <- "./UCI HAR Dataset/features.txt"
+subjectTrain <- "./UCI HAR Dataset/train/subject_train.txt"
+subjectTest <- "./UCI HAR Dataset/test/subject_test.txt"
 
 #read in datasets from each text file
 train <- read.table(trainFile) #train values
